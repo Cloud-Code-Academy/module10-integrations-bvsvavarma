@@ -204,7 +204,7 @@ public with sharing class DummyJSONCalloutTest {
 			FROM Contact
 			WHERE Id = :cont.Id
 		];
-
+		System.debug(updatedContact);
 		// Verify the contact was updated correctly
 		System.assertNotEquals(
 			null,
